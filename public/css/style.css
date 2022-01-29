@@ -1,0 +1,11 @@
+.custom {
+    width: 100px;
+}
+
+.header {
+    display: flex;
+}
+
+.header-user-icon {
+    margin-left: auto;
+}
