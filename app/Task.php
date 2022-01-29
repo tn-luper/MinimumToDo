@@ -45,49 +45,49 @@ class Task extends Model
         return $this->where('user_id', Auth::user()->id)->where('status', 0)->count();
     }
     
-    public function getpastbymonth()
-    {
-        return $this
-            ->where('user_id', Auth::user()->id)->where('status', '!=', 0)
-            ->orderBy('date', 'DESC')
-            ->get()
-            ->groupBy(function ($row) {
-                return $row->date->format('Y-m');
-                });
-    }
+    // public function getpastbymonth()
+    // {
+    //     return $this
+    //         ->where('user_id', Auth::user()->id)->where('status', '!=', 0)
+    //         ->orderBy('date', 'DESC')
+    //         ->get()
+    //         ->groupBy(function ($row) {
+    //             return $row->date->format('Y-m');
+    //             });
+    // }
     
-    public function getstatus1bymonth()
-    {
-        return $this
-            ->where('user_id', Auth::user()->id)->where('status', 1)
-            ->orderBy('date', 'DESC')
-            ->get()
-            ->groupBy(function ($row) {
-                return $row->date->format('Y-m');
-                });
-    }
+    // public function getstatus1bymonth()
+    // {
+    //     return $this
+    //         ->where('user_id', Auth::user()->id)->where('status', 1)
+    //         ->orderBy('date', 'DESC')
+    //         ->get()
+    //         ->groupBy(function ($row) {
+    //             return $row->date->format('Y-m');
+    //             });
+    // }
     
-    public function getstatus2bymonth()
-    {
-        return $this
-            ->where('user_id', Auth::user()->id)->where('status', 2)
-            ->orderBy('date', 'DESC')
-            ->get()
-            ->groupBy(function ($row) {
-                return $row->date->format('Y-m');
-                });
-    }
+    // public function getstatus2bymonth()
+    // {
+    //     return $this
+    //         ->where('user_id', Auth::user()->id)->where('status', 2)
+    //         ->orderBy('date', 'DESC')
+    //         ->get()
+    //         ->groupBy(function ($row) {
+    //             return $row->date->format('Y-m');
+    //             });
+    // }
     
-    public function getstatus3bymonth()
-    {
-        return $this
-            ->where('user_id', Auth::user()->id)->where('status', 3)
-            ->orderBy('date', 'DESC')
-            ->get()
-            ->groupBy(function ($row) {
-                return $row->date->format('Y-m');
-                });
-    }
+    // public function getstatus3bymonth()
+    // {
+    //     return $this
+    //         ->where('user_id', Auth::user()->id)->where('status', 3)
+    //         ->orderBy('date', 'DESC')
+    //         ->get()
+    //         ->groupBy(function ($row) {
+    //             return $row->date->format('Y-m');
+    //             });
+    // }
 
 
 }

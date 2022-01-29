@@ -66,30 +66,30 @@ class TaskController extends Controller
         return view('past_list')->with(['tasks' => $task->getpast()]);
     }
     
-    public function record_page(Task $task)
-    {
-        $pastresults = $task->getpastbymonth();
-        foreach ($pastresults as $key=>$pastresult){
-            $pastcounts[$key] = $pastresult->count();
-        }
+    // public function record_page(Task $task)
+    // {
+    //     $pastresults = $task->getpastbymonth();
+    //     foreach ($pastresults as $key=>$pastresult){
+    //         $pastcounts[$key] = $pastresult->count();
+    //     }
         
-        $status1results = $task->getstatus1bymonth();
-        foreach ($status1results as $key=>$status1result){
-            $status1counts[$key] = $status1result->count();
-        }
+    //     $status1results = $task->getstatus1bymonth();
+    //     foreach ($status1results as $key=>$status1result){
+    //         $status1counts[$key] = $status1result->count();
+    //     }
         
-        $status2results = $task->getstatus2bymonth();
-        foreach ($status2results as $key=>$status2result){
-            $status2counts[$key] = $status2result->count();
-        }
+    //     $status2results = $task->getstatus2bymonth();
+    //     foreach ($status2results as $key=>$status2result){
+    //         $status2counts[$key] = $status2result->count();
+    //     }
         
-        $status3results = $task->getstatus3bymonth();
-        foreach ($status3results as $key=>$status3result){
-            $status3counts[$key] = $status3result->count();
-        }
+    //     $status3results = $task->getstatus3bymonth();
+    //     foreach ($status3results as $key=>$status3result){
+    //         $status3counts[$key] = $status3result->count();
+    //     }
  
-        return view('record')->with(['pastcounts' => $pastcounts, 'status1counts' => $status1counts, 'status2counts' => $status2counts, 'status3counts' => $status3counts]);
-    }
+    //     return view('record')->with(['pastcounts' => $pastcounts, 'status1counts' => $status1counts, 'status2counts' => $status2counts, 'status3counts' => $status3counts]);
+    // }
 
     
 }
