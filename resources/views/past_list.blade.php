@@ -10,6 +10,9 @@
             <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="/past"><b>過去のタスク</b></a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/record">過去の達成率</a>
+            </li>
         </ul>
         
         <div class='tasks'>

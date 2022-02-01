@@ -10,6 +10,9 @@
             <li class="nav-item">
                 <a class="nav-link" href="/past">過去のタスク</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/record">過去の達成率</a>
+            </li>
         </ul>
       
         @foreach ($tasks as $task)
