@@ -1,14 +1,15 @@
     @extends('layouts.app')
 
     @section('content')
-        <h1>Minimum ToDo</h1>
-        
         <ul class="nav nav-tabs">
             <li class="nav-item">
-                <a class="nav-link" href="/active">今日のタスク</a>
+                <a class="nav-link" href="/">今日のタスク</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="/past"><b>過去のタスク</b></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/record">過去の達成率</a>
             </li>
         </ul>
         

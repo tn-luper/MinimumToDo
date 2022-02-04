@@ -1,78 +1,55 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+## MinimumToDo
 
-## About Laravel
+このアプリはToDoアプリの一種で、「本当に行いことに集中する」というテーマで作成しました。既存のToDoやスケジュールアプリは登録できるタスク数に制限がなく、たくさんのタスクを登録するも結局どれもやらないという経験から作成をスタートしました。アプリの特徴としては、<br>
+1.一日３つまでしかタスクを登録できない。<br>
+2.その代わりに一つのタスクについて詳細に設定ができる。<br>
+3.過去のタスクを閲覧することが可能である。<br>
+という３点です。
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## 使い方
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+「タスクの追加」のボタンを押すことでタスクの追加のページに移動します。ここで、実施日、タスクの内容、タスクを行うタイミング、最低限やること（must）、できたらやること（want）、工夫を設定します。<br>
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+「タスクを行うタイミング」とは一日のいつそのタスクを行うのかです。やる時間を明確にすることでタスクの遂行率を高めます。<br>
 
-## Learning Laravel
+「最低限やること（must）」とは、そのタスクの最低限やる量です。例えば、「タスクの内容」が「英語の勉強」であれば、「最低限やること（must）」は「5分」などと設定します。これは最低限やる分量を決めておくことで、タスクの着手のハードルを下げるためのものです。<br>
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+「できたらやること（want）」は目標の分量です。先ほどの例だと「１時間」などと設定します。<br>
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+「工夫」とはそのタスクを行うための工夫です。先ほどの例だと「あらかじめ勉強の準備をしておく」などです。他にも「スマホの電源を切る」など、タスクを行うときの障害を取り除くために設定します。<br>
 
-## Laravel Sponsors
+このようにその日にやりたいことを三つまで設定します。<br>
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+そして、タスクの終了後や一日の終わりにタスクの達成状況を登録します。「できたらやること（want）」を達成できたら達成（want）のボタンを、「できたらやること（want）」はできなかったが「最低限やること（must）」はできた場合は達成（must）のボタンを、そもそもタスクに着手できなかった場合は未達成のボタンを押してください。
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
-- [We Are The Robots Inc.](https://watr.mx/)
-- [Understand.io](https://www.understand.io/)
-- [Abdel Elrafa](https://abdelelrafa.com)
-- [Hyper Host](https://hyper.host)
-- [Appoly](https://www.appoly.co.uk)
-- [OP.GG](https://op.gg)
 
-## Contributing
+使い方のイメージとしては<br>
+その日にやりたいこと３つまで登録する⇒一日を過ごす⇒その日の終わりに登録したタスクの達成状況を記録⇒翌日にやりたいことを３つまで設定する<br>
+という感じです。
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
-## Code of Conduct
+## 過去のタスク
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+「過去のタスク」のページでは過去のタスクの一覧とその達成状況を確認することができます。達成（want）のタスクは緑色、達成（must）のタスクは黄色、未達成のタスクは赤色で表示されます。<br>
+「過去の達成率」のページでは、過去のタスクの達成状況の割合を各月ごとにグラフ化したものを表示しています。こちらも、達成（want）は緑色、達成（must）は黄色、未達成は赤色で表示されます。<br>
+記録や達成率の可視化によってモチベーションを高めます。
 
-## Security Vulnerabilities
+## よくある質問
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Q.過去のタスクの中で、達成状況が変化したタスクがあるため、ステータスの変更をしようとしたができない。<br>
+A.そもそも過去のタスクというのは未達成だとしても、終了したタスクであるため、ステータスの変更はできません。
+例えば、「あるタスクのmustを完了したためとりあえずmustのボタンを押した。翌日のそのタスクのwantまで達成できたため達成状況を達成（want）にする。」という使い方は想定しておりません。
+これはあくまでその日にやりたいことを設定するアプリであるため、実施日が過ぎたタスクはその時点で完結します。
 
-## License
+## 作成者
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+仲手川樹
+
+e-mail:tatsuki.nakategawa@gmail.com
+
+## 利用方法
+
+以下のURLから利用できます。<br>
+[https://quiet-shore-99034.herokuapp.com](https://quiet-shore-99034.herokuapp.com)
+

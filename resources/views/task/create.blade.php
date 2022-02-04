@@ -2,7 +2,6 @@
 
     @section('content')
     <div>
-        <h1>Minimum ToDo</h1>
         <h4>タスクを追加</h4>
         <form action="/active" method="POST">
             @csrf
@@ -32,7 +31,7 @@
             <p class="plan__error" style="color:red">{{ $errors->first('task.plan') }}</p>
             <input type="hidden" name="task[user_id]" value={{Auth::id()}}>
             <button type="submit" class="btn btn-primary">タスクを追加</button>
-            <a class="btn btn btn-outline-secondary" href='/active' role="button">キャンセル</a>
+            <a class="btn btn btn-outline-secondary" href='/' role="button">キャンセル</a>
         </form>
     </div>
     @endsection
