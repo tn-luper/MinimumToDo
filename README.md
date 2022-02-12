@@ -53,3 +53,8 @@ e-mail:tatsuki.nakategawa@gmail.com
 以下のURLから利用できます。<br>
 [https://quiet-shore-99034.herokuapp.com](https://quiet-shore-99034.herokuapp.com)
 
+
+テスト用アカウント <br>
+メールアドレス：minimumtodo.test@kmail.li <br>
+パスワード：minimumtodo <br>
+
